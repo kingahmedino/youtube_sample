@@ -8,18 +8,23 @@
     <fragment
         android:id="@+id/nav_home"
         android:name="com.app.youtubeapp.ui.home.HomeFragment"
-        android:label="@string/menu_home"
+        android:label=""
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/nav_courses"
         android:name="com.app.youtubeapp.ui.courses.CoursesFragment"
-        android:label="@string/menu_courses"
+        android:label=""
         tools:layout="@layout/fragment_courses" />
 
     <fragment
         android:id="@+id/nav_invite"
         android:name="com.app.youtubeapp.ui.invite.InviteFragment"
-        android:label="@string/menu_invite_friends"
+        android:label=""
         tools:layout="@layout/fragment_invite" />
+    <fragment
+        android:id="@+id/nav_contact_us"
+        android:name="com.app.youtubeapp.ui.contactus.ContactUsFragment"
+        android:label=""
+        tools:layout="@layout/fragment_contact_us" />
 </navigation>

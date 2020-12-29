@@ -23,11 +23,10 @@ public class CoursesFragment extends Fragment {
         mCoursesViewModel =
                 ViewModelProviders.of(this).get(CoursesViewModel.class);
         View root = inflater.inflate(R.layout.fragment_courses, container, false);
-        final TextView textView = root.findViewById(R.id.text_gallery);
         mCoursesViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
-                textView.setText(s);
+
             }
         });
         return root;
