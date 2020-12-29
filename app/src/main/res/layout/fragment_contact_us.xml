@@ -35,70 +35,86 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/materialButton"
+    <ImageView
+        android:id="@+id/image_view_10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:src="@drawable/ic_email"
+        android:layout_marginTop="16dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:background="@color/colorTransparent"
-        android:drawableStart="@drawable/ic_email"
-        android:fontFamily="@font/texta"
-        android:text="Email"
-        android:textAllCaps="false"
-        android:textColor="@color/colorBlack"
         app:layout_constraintStart_toStartOf="@+id/textView5"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        app:layout_constraintTop_toBottomOf="@+id/textView5"/>
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Email"
+        android:textColor="@color/colorBlack"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/image_view_10"
+        app:layout_constraintStart_toEndOf="@+id/image_view_10"
+        app:layout_constraintTop_toTopOf="@+id/image_view_10" />
 
     <ImageButton
+        android:id="@+id/imageButton5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="24dp"
         android:background="@drawable/ic_arrow_forward"
-        app:layout_constraintBottom_toBottomOf="@+id/materialButton"
+        app:layout_constraintBottom_toBottomOf="@+id/image_view_10"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/materialButton" />
+        app:layout_constraintTop_toTopOf="@+id/image_view_10" />
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
         android:background="#ECE8E8"
         android:padding="10dp"
+        android:layout_marginTop="16dp"
         android:text="You will get a reply back from us within 48 hours"
         android:textAlignment="center"
         android:textColor="@color/colorBlack"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/materialButton" />
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/materialButton2"
+    <ImageView
+        android:id="@+id/image_view_11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:background="@color/colorTransparent"
-        android:drawableStart="@drawable/ic_chat"
-        android:drawablePadding="15dp"
-        android:fontFamily="@font/texta"
-        android:text="Chat with us"
-        android:textAllCaps="false"
-        android:textColor="@color/colorBlack"
-        app:layout_constraintStart_toStartOf="@+id/materialButton"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_chat"
+        app:layout_constraintStart_toStartOf="@+id/textView5"
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
     <TextView
+        android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="12dp"
         android:text="(9AM - 9PM)"
         android:textColor="@color/colorBlack"
         android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="@+id/materialButton2"
+        app:layout_constraintBottom_toBottomOf="@+id/textView8"
         app:layout_constraintEnd_toStartOf="@+id/imageButton6"
-        app:layout_constraintTop_toTopOf="@+id/materialButton2" />
+        app:layout_constraintTop_toTopOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Chat with us"
+        android:textColor="@color/colorBlack"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/image_view_11"
+        app:layout_constraintStart_toEndOf="@+id/image_view_11"
+        app:layout_constraintTop_toTopOf="@+id/image_view_11" />
 
     <ImageButton
         android:id="@+id/imageButton6"
@@ -106,24 +122,31 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="24dp"
         android:background="@drawable/ic_arrow_forward"
-        app:layout_constraintBottom_toBottomOf="@+id/materialButton2"
+        app:layout_constraintBottom_toBottomOf="@+id/textView9"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/materialButton2" />
+        app:layout_constraintTop_toTopOf="@+id/textView9" />
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/materialButton3"
+    <ImageView
+        android:id="@+id/image_view_12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:background="@color/colorTransparent"
-        android:drawableStart="@drawable/ic_share"
-        android:drawablePadding="15dp"
-        android:fontFamily="@font/texta"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/ic_share"
+        app:layout_constraintStart_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/image_view_11" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
         android:text="Follow us"
-        android:textAllCaps="false"
         android:textColor="@color/colorBlack"
-        app:layout_constraintStart_toStartOf="@+id/materialButton"
-        app:layout_constraintTop_toBottomOf="@+id/materialButton2" />
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/image_view_12"
+        app:layout_constraintStart_toEndOf="@+id/image_view_12"
+        app:layout_constraintTop_toTopOf="@+id/image_view_12" />
 
     <ImageButton
         android:id="@+id/imageButton10"
@@ -131,44 +154,44 @@
         android:layout_height="28dp"
         android:layout_marginStart="48dp"
         android:background="@drawable/ic_facebook"
-        app:layout_constraintBottom_toBottomOf="@+id/materialButton3"
+        app:layout_constraintBottom_toBottomOf="@+id/textView10"
         app:layout_constraintEnd_toStartOf="@+id/imageButton11"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/materialButton3"
-        app:layout_constraintTop_toTopOf="@+id/materialButton3" />
+        app:layout_constraintStart_toEndOf="@+id/textView10"
+        app:layout_constraintTop_toTopOf="@+id/textView10" />
 
     <ImageButton
         android:id="@+id/imageButton11"
         android:layout_width="28dp"
         android:layout_height="28dp"
         android:background="@drawable/ic_instagram"
-        app:layout_constraintBottom_toBottomOf="@+id/materialButton3"
+        app:layout_constraintBottom_toBottomOf="@+id/textView10"
         app:layout_constraintEnd_toStartOf="@+id/imageButton12"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/imageButton10"
-        app:layout_constraintTop_toTopOf="@+id/materialButton3" />
+        app:layout_constraintTop_toTopOf="@+id/textView10" />
 
     <ImageButton
         android:id="@+id/imageButton12"
         android:layout_width="28dp"
         android:layout_height="28dp"
         android:background="@drawable/ic_twitter"
-        app:layout_constraintBottom_toBottomOf="@+id/materialButton3"
+        app:layout_constraintBottom_toBottomOf="@+id/textView10"
         app:layout_constraintEnd_toStartOf="@+id/imageButton13"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/imageButton11"
-        app:layout_constraintTop_toTopOf="@+id/materialButton3" />
+        app:layout_constraintTop_toTopOf="@+id/textView10" />
 
     <ImageButton
         android:id="@+id/imageButton13"
         android:layout_width="28dp"
         android:layout_height="28dp"
         android:background="@drawable/ic_telegram"
-        app:layout_constraintBottom_toBottomOf="@+id/materialButton3"
+        app:layout_constraintBottom_toBottomOf="@+id/textView10"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/imageButton12"
-        app:layout_constraintTop_toTopOf="@+id/materialButton3" />
+        app:layout_constraintTop_toTopOf="@+id/textView10" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -180,6 +203,6 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/materialButton3" />
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
