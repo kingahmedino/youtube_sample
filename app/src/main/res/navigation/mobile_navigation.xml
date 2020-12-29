@@ -12,12 +12,6 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_courses"
-        android:name="com.app.youtubeapp.ui.courses.CoursesFragment"
-        android:label=""
-        tools:layout="@layout/fragment_courses" />
-
-    <fragment
         android:id="@+id/nav_invite"
         android:name="com.app.youtubeapp.ui.invite.InviteFragment"
         android:label=""
