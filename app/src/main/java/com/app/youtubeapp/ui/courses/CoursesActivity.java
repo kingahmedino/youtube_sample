@@ -25,6 +25,7 @@ public class CoursesActivity extends YouTubeBaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mCoursesBinding = DataBindingUtil.setContentView(this, R.layout.activity_courses);
+        toolBarOperations();
         mYouTubePlayerView = findViewById(R.id.youtube_player_view);
         initializeYouTubePlayer();
         mCoursesBinding.playButton.setOnClickListener(new View.OnClickListener() {
@@ -35,12 +36,25 @@ public class CoursesActivity extends YouTubeBaseActivity {
         });
     }
 
+    private void toolBarOperations() {
+        setActionBar(mCoursesBinding.toolbar);
+        getActionBar().setDisplayHomeAsUpEnabled(true);
+        getActionBar().setDisplayShowHomeEnabled(true);
+        getActionBar().setTitle("Courses");
+        mCoursesBinding.toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
+    }
+
     private void initializeYouTubePlayer() {
         mOnInitializedListener = new YouTubePlayer.OnInitializedListener() {
             @Override
             public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer youTubePlayer, boolean b) {
                 Log.d(TAG, "onInitializationSuccess: Success");
-                youTubePlayer.loadVideo("2duc77R4Hqw");
+                youTubePlayer.loadPlaylist("PLgCYzUzKIBE8TUoCyjomGFqzTFcJ05OaC");
             }
 
             @Override
